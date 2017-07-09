@@ -1,0 +1,142 @@
+1.
+        int num;
+        //Scanner class to read value
+        Scanner sc=new Scanner(System.in);
+         
+        System.out.print("Enter any integer number: ");
+        num=sc.nextInt();
+         
+        //check condition for +ve, -ve and Zero
+        if(num>0)
+            System.out.println(num + " is POSITIVE NUMBER.");
+        else if(num<0)
+            System.out.println(num + " is NEGATIVE NUMBER.");
+        else
+            System.out.println("IT's ZERO.");
+         
+2.
+            import java.util.*;
+    import java.lang.*;
+    import java.io.*;
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	int x;
+      System.out.println("Enter an integer to check if it is odd or even ");
+      Scanner in = new Scanner(System.in);
+      x = in.nextInt();
+ 
+      if ( x % 2 == 0 )
+         System.out.println("You entered an even number.");
+      else
+         System.out.println("You entered an odd number.");	
+	}
+}
+
+3.
+      import java.io.BufferedReader;
+
+    import java.io.IOException;
+
+    import java.io.InputStreamReader;
+
+    import java.util.Scanner;
+
+    public class Vowel_Consonant 
+
+    {
+
+        public static void main(String[] args) throws Exception 
+
+        {
+
+            char n;
+
+            BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+            System.out.print("Enter the character you want to check:");
+
+            n = (char) bf.read();
+
+            switch(n)
+
+            {
+
+                case 'a':
+
+                System.out.println("The given character "+n+" is vowel");
+
+                break;
+
+     
+
+                case 'e':
+
+                System.out.println("The given character "+n+" is vowel");
+
+                break;
+
+     
+
+                case 'i':
+
+                System.out.println("The given character "+n+" is vowel");
+
+                break;
+
+     
+
+                case 'o':
+
+                System.out.println("The given character "+n+" is vowel");
+
+                break;
+
+     
+
+                case 'u':
+
+                System.out.println("The given character "+n+" is vowel");
+
+                break;
+
+     
+
+                default:
+
+                System.out.println("The given character "+n+" is consonant");
+
+                break;
+
+            }
+
+        }
+
+    }
+
+4.
+  import java.util.Scanner;
+
+public class JavaProgram
+{
+    public static void main(String args[])
+    {
+        char ch;
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Enter a Character : ");
+        ch = scan.next().charAt(0);
+		
+        if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+        {
+            System.out.print(ch + " is an Alphabet");
+        }
+        else
+        {
+            System.out.print(ch + " is not an Alphabet");
+        }
+    }
+}
